@@ -1,5 +1,8 @@
 # ultimate-windows-speedup-guide
 
+## Automated for noobs 
+https://github.com/10se1ucgo/DisableWinTracking
+
 ## Disable windows automatic update
 1. Download script windows-update.ps1
 2. Open powershell with elevated privileges.
