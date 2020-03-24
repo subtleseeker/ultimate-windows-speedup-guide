@@ -48,3 +48,6 @@ create a new DWORD of 32-bit and name it as AllowTelemetry and then assign it a 
 Uninstall apps 
 1. Host app Service Updater
 2. Cyberlink *
+
+Have more time?
+https://www.marksanborn.net/howto/turn-off-unnecessary-windows-services/
