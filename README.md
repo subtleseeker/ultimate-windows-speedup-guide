@@ -19,3 +19,12 @@ Set-ExecutionPolicy RemoteSigned
 
 ## Disable SysMain service
 1. services.msc > SysMain > Properties > Disable 
+
+## Disable Microsoft Office Click-to-Run service
+1. services.msc > Microsoft Office Click-to-Run > Properties > Disable 
+
+## Disable startup apps 
+1. ...from Task Manager
+
+## Turn off Background Apps
+1. Background apps > Prevent apps from running in background (fret not..all are just useless apps)
