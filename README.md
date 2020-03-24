@@ -3,6 +3,9 @@
 ## Automated for noobs 
 https://github.com/10se1ucgo/DisableWinTracking
 
+## Take a look here
+https://github.com/Sycnex/Windows10Debloater
+
 ## Disable windows automatic update
 1. Download script windows-update.ps1
 2. Open powershell with elevated privileges.
