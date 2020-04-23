@@ -1,5 +1,8 @@
 # ultimate-windows-speedup-guide
 
+## Tips
+1. Run a command as administrator from RUN (Ctrl+R), using `Ctrl+Shift+Enter`.
+
 ## Install gpedit.msc
 Download and run as administrator. Logs generated in List.txt   
 **BONUS:** To update the changes made in gpedit, do in cmd `gpupdate /force`
