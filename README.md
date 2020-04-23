@@ -1,5 +1,9 @@
 # ultimate-windows-speedup-guide
 
+## Install gpedit.msc
+Download and run as administrator. Logs generated in List.txt   
+**BONUS:** To update the changes made in gpedit, do in cmd `gpupdate /force`
+
 ## Automated for noobs 
 https://github.com/10se1ucgo/DisableWinTracking
 
@@ -7,12 +11,33 @@ https://github.com/10se1ucgo/DisableWinTracking
 https://github.com/Sycnex/Windows10Debloater
 
 ## Disable windows automatic update
+1. gpedit.msc
+```
+Computer Configuration\Administrative Templates\Windows Components\Windows Update
+```
+OR
 1. Download script windows-update.ps1
 2. Open powershell with elevated privileges.
 3. Run
 ```
 Set-ExecutionPolicy RemoteSigned
 & "~\Desktop\windows-update.ps1"
+```
+
+## Disable Windows Defender
+1. gpedit.msc 
+```
+Computer Configuration/Administrative Templates/Windows Components/Windows Defender Antivirus/Real-time Protection
+```
+OR
+1. In cmd(admin)
+```
+REG ADD “hklmsoftwarepoliciesmicrosoftwindows defender” /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+```
+## Disable onedrive
+1. gpedit
+```
+Computer Configuration > Administrative Templates > Windows Components > OneDrive > Prevent the usage of OneDrive for file storage
 ```
 
 ## Disable Windows Store
