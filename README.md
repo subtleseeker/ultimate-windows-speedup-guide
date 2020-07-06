@@ -2,10 +2,33 @@
 
 ## Tips
 1. Run a command as administrator from RUN (Ctrl+R), using `Ctrl+Shift+Enter`.
+2. Restarting in safe mode: 
+```
+bcdedit /set {current} safeboot network
+shutdown /r
+```
+To disable it back, (yeah you need to disable it)
+```
+bcdedit /deletevalue {current} safeboot
+shutdown /r
+```
+
+## Disable Anti-malware service
+1. Regedit `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender`, maybe take permission of dir.    
+2. Set `DisableAntiSpyware` and `DisableAntiVirus` both to 1.   
+
+
+## Disable Windows Update
+1. Regedit `HKEY\LOCAL\MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU`, set `NoAutoUpdate` to 1
+2. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, create a DWORD `DisableAntiSpyware` and set it to 1, and `AUOptions` to 2 (notify to download and install updates).   
 
 ## Install gpedit.msc
 Download and run as administrator. Logs generated in List.txt   
 **BONUS:** To update the changes made in gpedit, do in cmd `gpupdate /force`
+
+## Install sysinternals
+1. Install sysinternals suite
+2. Install psexec and run regedit with more permissions from cmd: `psexec -s -i regedit`
 
 ## Automated for noobs 
 https://github.com/10se1ucgo/DisableWinTracking
