@@ -13,6 +13,7 @@ bcdedit /deletevalue {current} safeboot
 shutdown /r
 ```
 ## Block windows update completely with host file
+Append to c:\Windows\System32\Drivers\etc\hosts after getting ownership of the file.
 ```
 ########################
 # Block windows update
