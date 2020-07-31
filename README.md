@@ -12,6 +12,24 @@ To disable it back, (yeah you need to disable it)
 bcdedit /deletevalue {current} safeboot
 shutdown /r
 ```
+## Block windows update completely with host file
+```
+########################
+# Block windows update
+########################
+127.0.0.1 *.download.windowsupdate.com
+127.0.0.1 *.microsoft.com
+127.0.0.1 *.update.microsoft.com
+127.0.0.1 *.windowsupdate.com
+127.0.0.1 *.windowsupdate.microsoft.com
+127.0.0.1 download.microsoft.com
+127.0.0.1 download.windowsupdate.com
+127.0.0.1 ntservicepack.microsoft.com
+127.0.0.1 test.stats.update.microsoft.com
+127.0.0.1 windowsupdate.microsoft.com
+127.0.0.1 wustat.windows.com
+127.0.0.1 stats.microsoft.com
+```
 
 ## Disable Anti-malware service
 1. Regedit `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender`, maybe take permission of dir.    
