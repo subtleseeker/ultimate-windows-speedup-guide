@@ -1,5 +1,7 @@
 # ultimate-windows-speedup-guide
 
+Check this out: https://superuser.com/questions/404617/what-is-the-proper-way-of-debugging-a-slow-windows-installation
+
 ## Tips
 1. Run a command as administrator from RUN (Ctrl+R), using `Ctrl+Shift+Enter`.
 2. Restarting in safe mode: 
@@ -12,6 +14,8 @@ To disable it back, (yeah you need to disable it)
 bcdedit /deletevalue {current} safeboot
 shutdown /r
 ```
+3. Process Explorer: http://live.sysinternals.com/procexp.exe   
+
 ## Block windows update completely with host file
 Append to c:\Windows\System32\Drivers\etc\hosts after getting ownership of the file.
 ```
