@@ -1,5 +1,7 @@
 # ultimate-windows-speedup-guide
 
+Disable updates: https://github.com/DavidXanatos/wumgr
+Antispyware: https://www.oo-software.com/en/shutup10
 Check this out: https://superuser.com/questions/404617/what-is-the-proper-way-of-debugging-a-slow-windows-installation
 
 ## Tips
