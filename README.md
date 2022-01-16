@@ -1,7 +1,13 @@
 # ultimate-windows-speedup-guide
 
-Disable updates: https://github.com/DavidXanatos/wumgr
-Antispyware: https://www.oo-software.com/en/shutup10
+Activate windows/office: https://github.com/massgravel/Microsoft-Activation-Scripts
+Disable updates: https://github.com/DavidXanatos/wumgr   
+Debloater: https://github.com/Sycnex/Windows10Debloater   
+Antispyware: https://www.oo-software.com/en/shutup10    
+
+---
+Note: The remaining stuff is old, before I knew better.   
+
 Check this out: https://superuser.com/questions/404617/what-is-the-proper-way-of-debugging-a-slow-windows-installation
 
 ## Tips
